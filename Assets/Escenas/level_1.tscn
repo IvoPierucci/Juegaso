@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bgxn41dbojsbl" path="res://Assets/Escenas/Suelo1.tscn" id="6_agirm"]
 [ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="7_brcwq"]
 [ext_resource type="PackedScene" uid="uid://w6i40rb1qkbn" path="res://Assets/Escenas/fuera_limite.tscn" id="8_8mj3f"]
-[ext_resource type="Texture2D" uid="uid://c5x0d28v6x38l" path="res://Assets/Player/medialuna.png" id="9_ws6cd"]
+[ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="9_ovqf8"]
 
 [node name="Level1" type="Node2D" unique_id=1875453159]
 
@@ -35,11 +35,11 @@ scale = Vector2(3, 3)
 position = Vector2(20, -32.000015)
 
 [node name="CharacterBody2D" parent="." unique_id=1854975082 instance=ExtResource("4_t6wye")]
-position = Vector2(1200, 530)
+position = Vector2(3799, -577)
 scale = Vector2(5, 5)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("7_brcwq")]
-position = Vector2(183, 454.00003)
+position = Vector2(775, 494.00003)
 scale = Vector2(0.3, 0.3)
 
 [node name="fueraLimite" parent="." unique_id=94960795 instance=ExtResource("8_8mj3f")]
@@ -51,7 +51,6 @@ position = Vector2(1605, 140)
 [node name="fueraLimite3" parent="." unique_id=1372838564 instance=ExtResource("8_8mj3f")]
 position = Vector2(4281, -767)
 
-[node name="Medialuna" type="Sprite2D" parent="." unique_id=2102402565]
-position = Vector2(2522, -115.000015)
-scale = Vector2(0.0859375, 0.09277344)
-texture = ExtResource("9_ws6cd")
+[node name="factura" parent="." unique_id=222449802 instance=ExtResource("9_ovqf8")]
+position = Vector2(2758, -50.000004)
+scale = Vector2(0.4, 0.4)

@@ -4,9 +4,12 @@ extends CharacterBody2D
 const SPEED = 1000.0
 const JUMP_VELOCITY = -520.0
 var inicio : Vector2
+var medialunas : int
 @onready var sprite = $Sprite2D
+
 func _ready() -> void:
 	inicio = position
+	medialunas =0
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -34,3 +37,15 @@ func _physics_process(delta: float) -> void:
 
 func _return() -> void:
 	position = inicio
+	
+func _agarrar_medialuna() -> bool:
+	medialunas +=1
+	return true
+	
+func _dejar_medialuna() -> int:
+	var aux = medialunas
+	medialunas = 0
+	return aux
+	
+func _set_checkpoint(a : Vector2) -> void:
+	inicio=a

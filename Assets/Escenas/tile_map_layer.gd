@@ -12,3 +12,6 @@ func _process(delta: float) -> void:
 	
 func _return() -> void:
 	pass
+
+func _agarrar_medialuna() ->bool:
+	return false

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cmxyixc80y4oc"]
+
+[ext_resource type="Script" uid="uid://cvjo1pq1gatpf" path="res://Assets/Escenas/factura.gd" id="1_dsn3g"]
+[ext_resource type="Texture2D" uid="uid://db48psvyhefyo" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Medialuna flotando.png" id="1_f2f5v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dsn3g"]
+radius = 49.37307
+height = 243.25764
+
+[node name="factura" type="Area2D" unique_id=222449802]
+script = ExtResource("1_dsn3g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1025650850]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_f2f5v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2052118363]
+position = Vector2(-7.999999, -20)
+rotation = -1.0471976
+shape = SubResource("CapsuleShape2D_dsn3g")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
