@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp5pq075c3a0t"
-path="res://.godot/imported/Attack_F_2.png-e3d4edb317ddcde61904b7d7e5859c47.ctex"
+path="res://.godot/imported/Attack_F_2.png-3795119ad739d4b0140042c45ccff239.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites [Enemies]/Mushroom/Mushroom_1/Attack/Attack_F_2.png"
-dest_files=["res://.godot/imported/Attack_F_2.png-e3d4edb317ddcde61904b7d7e5859c47.ctex"]
+source_file="res://Assets/Player/Mushroom/Mushroom_1/Attack/Attack_F_2.png"
+dest_files=["res://.godot/imported/Attack_F_2.png-3795119ad739d4b0140042c45ccff239.ctex"]
 
 [params]
 

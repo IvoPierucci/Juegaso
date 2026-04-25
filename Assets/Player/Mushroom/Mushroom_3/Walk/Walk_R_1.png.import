@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4jwsjgta4os2"
-path="res://.godot/imported/Walk_R_1.png-acbeb6a5d3ff25251fb8ec370aca3c80.ctex"
+path="res://.godot/imported/Walk_R_1.png-c074e4056f490052de7382a81e017a2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites [Enemies]/Mushroom/Mushroom_3/Walk/Walk_R_1.png"
-dest_files=["res://.godot/imported/Walk_R_1.png-acbeb6a5d3ff25251fb8ec370aca3c80.ctex"]
+source_file="res://Assets/Player/Mushroom/Mushroom_3/Walk/Walk_R_1.png"
+dest_files=["res://.godot/imported/Walk_R_1.png-c074e4056f490052de7382a81e017a2b.ctex"]
 
 [params]
 

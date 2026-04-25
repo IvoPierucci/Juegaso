@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://40upmcwas07p"
-path="res://.godot/imported/Idle_L_1.png-8a73a50b0e5f02e6762beffe0e2be304.ctex"
+path="res://.godot/imported/Idle_L_1.png-1a35bbf57a71e61391f3d8e5e38cea8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites [Enemies]/Mushroom/Mushroom_4/Idle/Idle_L_1.png"
-dest_files=["res://.godot/imported/Idle_L_1.png-8a73a50b0e5f02e6762beffe0e2be304.ctex"]
+source_file="res://Assets/Player/Mushroom/Mushroom_4/Idle/Idle_L_1.png"
+dest_files=["res://.godot/imported/Idle_L_1.png-1a35bbf57a71e61391f3d8e5e38cea8b.ctex"]
 
 [params]
 

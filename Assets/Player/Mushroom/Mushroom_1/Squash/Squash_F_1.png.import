@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df6jet0bf0v0a"
-path="res://.godot/imported/Squash_F_1.png-0dcb5e1cb523fa7ec985f9e3b45bdb1b.ctex"
+path="res://.godot/imported/Squash_F_1.png-54e676bd80de3b59a33e9b3ff2e32063.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites [Enemies]/Mushroom/Mushroom_1/Squash/Squash_F_1.png"
-dest_files=["res://.godot/imported/Squash_F_1.png-0dcb5e1cb523fa7ec985f9e3b45bdb1b.ctex"]
+source_file="res://Assets/Player/Mushroom/Mushroom_1/Squash/Squash_F_1.png"
+dest_files=["res://.godot/imported/Squash_F_1.png-54e676bd80de3b59a33e9b3ff2e32063.ctex"]
 
 [params]
 
