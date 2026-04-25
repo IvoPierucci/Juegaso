@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://b32g4edmfgowe"]
+[gd_scene format=3 uid="uid://ocffrrond61r"]
 
-[ext_resource type="PackedScene" uid="uid://b53rgh62rgs30" path="res://Scenes/Suelo1.tscn" id="1_8ffim"]
+[ext_resource type="PackedScene" path="res://Scenes/Suelo1.tscn" id="1_8ffim"]
 [ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="2_xfk5q"]
 
 [node name="Level1" type="Node2D" unique_id=1875453159]
