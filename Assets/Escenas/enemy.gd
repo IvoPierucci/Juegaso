@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Area2D
 
 
 const SPEED = 300.0
@@ -21,3 +21,7 @@ func _physics_process(delta: float) -> void:
 		sprite.flip_h = true # Mira a la izquierda
 	elif (dire < Vector2(0,0)):
 		sprite.flip_h = false # Mira a la derecha
+
+
+func _on_body_entered(body: Node2D) -> void:
+	body._return()

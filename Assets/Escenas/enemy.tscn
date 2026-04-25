@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://tjvcboxqteg2" path="res://Assets/Player/Mushroom/Mushroom_1/Idle/Idle_L_1.png" id="1_2u1ga"]
 [ext_resource type="Script" uid="uid://ds8a34b83isu3" path="res://Assets/Escenas/enemy.gd" id="1_2uvyp"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1854975082]
+[node name="Enemy2D" type="Area2D" unique_id=956324945]
 script = ExtResource("1_2uvyp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=912620788]
@@ -11,3 +11,5 @@ polygon = PackedVector2Array(-5, -3, 5, -3, 8, 0, 8, 6, 5, 8, 5, 12, -5, 12, -5,
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2018787254]
 texture = ExtResource("1_2u1ga")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
