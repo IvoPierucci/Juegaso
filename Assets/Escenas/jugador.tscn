@@ -1,19 +1,23 @@
 [gd_scene format=3 uid="uid://ceabc8mmcxkrc"]
 
-[ext_resource type="Texture2D" uid="uid://dbb6hvibxugfq" path="res://Assets/Player/Mushroom/Mushroom_1/Idle/Idle_R_1.png" id="1_mrxoy"]
 [ext_resource type="Script" uid="uid://inigtdhpdhrj" path="res://Assets/Scripts/jugador.gd" id="1_tinhx"]
+[ext_resource type="Texture2D" uid="uid://cvedqtp54wvy" path="res://Assets/Player/Personaje normal.png" id="2_tinhx"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_tinhx"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8y0cf"]
+radius = 164.0
+height = 766.0
 
 [node name="Jugador" type="CharacterBody2D" unique_id=756833830]
 script = ExtResource("1_tinhx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=750685834]
-texture = ExtResource("1_mrxoy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=454871063]
-position = Vector2(0, 4)
-shape = SubResource("CircleShape2D_tinhx")
+position = Vector2(-0.014, -0.014)
+texture = ExtResource("2_tinhx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=873286255]
 scale = Vector2(2, 2)
+zoom = Vector2(0.5, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2123157115]
+position = Vector2(-22, -35)
+shape = SubResource("CapsuleShape2D_8y0cf")
