@@ -27,16 +27,16 @@ position = Vector2(698.00006, 398.00003)
 scale = Vector2(2.3038197, 1.212963)
 texture = ExtResource("3_7k1e5")
 
-[node name="CharacterBody2D" parent="." unique_id=1854975082 instance=ExtResource("4_t6wye")]
-position = Vector2(1200, 530)
-scale = Vector2(5, 5)
-
 [node name="Plataforma" parent="." unique_id=1508260971 instance=ExtResource("5_jrkly")]
 position = Vector2(1315, 542)
 scale = Vector2(3, 3)
 
 [node name="Suelo" parent="." unique_id=1996501728 instance=ExtResource("6_agirm")]
 position = Vector2(20, -32.000015)
+
+[node name="CharacterBody2D" parent="." unique_id=1854975082 instance=ExtResource("4_t6wye")]
+position = Vector2(1200, 530)
+scale = Vector2(5, 5)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("7_brcwq")]
 position = Vector2(183, 454.00003)

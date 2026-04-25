@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 var posIni : Vector2
 var dire = Vector2(-1,0)
+@onready var sprite = $Sprite2D
 
 func _ready() -> void:
 	posIni = position
@@ -15,3 +16,8 @@ func _physics_process(delta: float) -> void:
 		dire= Vector2(1,0)
 	if(position >= posIni + Vector2(400,0)):
 		dire= Vector2(-1,0)
+		
+	if (dire > Vector2(0,0)):
+		sprite.flip_h = true # Mira a la izquierda
+	elif (dire < Vector2(0,0)):
+		sprite.flip_h = false # Mira a la derecha
