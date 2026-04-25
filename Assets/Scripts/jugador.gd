@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
 
-const SPEED = 250.0
-const JUMP_VELOCITY = -500.0
-@onready var anim = $Sprite2D
+const SPEED = 1000.0
+const JUMP_VELOCITY = -520.0
+var inicio : Vector2
+@onready var sprite = $Sprite2D
+func _ready() -> void:
+	inicio = position
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -24,5 +27,10 @@ func _physics_process(delta: float) -> void:
 
 
 	move_and_slide()
-	
-	
+	if velocity.x < 0:
+		sprite.flip_h = true # Mira a la izquierda
+	elif velocity.x > 0:
+		sprite.flip_h = false # Mira a la derecha
+
+func _return() -> void:
+	position = inicio

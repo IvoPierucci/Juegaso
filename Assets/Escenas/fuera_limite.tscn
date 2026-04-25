@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://w6i40rb1qkbn"]
+
+[ext_resource type="Script" uid="uid://d3jssel2cj300" path="res://Assets/Escenas/fuera_limite.gd" id="1_xuhod"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_upi3k"]
+size = Vector2(1177, 383)
+
+[node name="fueraLimite" type="Area2D" unique_id=94960795]
+script = ExtResource("1_xuhod")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=187647632]
+position = Vector2(589, 807)
+shape = SubResource("RectangleShape2D_upi3k")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
