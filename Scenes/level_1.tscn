@@ -1,3 +1,12 @@
 [gd_scene format=3 uid="uid://b32g4edmfgowe"]
 
+[ext_resource type="PackedScene" uid="uid://b53rgh62rgs30" path="res://Scenes/Suelo1.tscn" id="1_8ffim"]
+[ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="2_xfk5q"]
+
 [node name="Level1" type="Node2D" unique_id=1875453159]
+
+[node name="Suelo" parent="." unique_id=1996501728 instance=ExtResource("1_8ffim")]
+
+[node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("2_xfk5q")]
+position = Vector2(183, 454.00003)
+scale = Vector2(6, 6)
