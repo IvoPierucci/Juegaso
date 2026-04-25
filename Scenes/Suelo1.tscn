@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://b53rgh62rgs30"]
+
+[ext_resource type="Texture2D" uid="uid://cnl46hoidgjhd" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/1 Tiles/Tile_01.png" id="1_73hvi"]
+[ext_resource type="Texture2D" uid="uid://c521g5ol6omew" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/1 Tiles/Tile_02.png" id="2_c7tj0"]
+[ext_resource type="Texture2D" uid="uid://1iwktfey7a1l" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/1 Tiles/Tile_03.png" id="3_770sd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tlndo"]
+size = Vector2(446, 33)
+
+[node name="Suelo" type="StaticBody2D" unique_id=1996501728]
+scale = Vector2(3, 3)
+
+[node name="Tile01" type="Sprite2D" parent="." unique_id=1769329488]
+position = Vector2(6.0000076, 197.66666)
+texture = ExtResource("1_73hvi")
+
+[node name="Tile02" type="Sprite2D" parent="." unique_id=1712381275]
+position = Vector2(38.000008, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile03" type="Sprite2D" parent="." unique_id=2058126888]
+position = Vector2(422, 197.66666)
+texture = ExtResource("3_770sd")
+
+[node name="Tile04" type="Sprite2D" parent="." unique_id=478601864]
+position = Vector2(70.00001, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile05" type="Sprite2D" parent="." unique_id=361830219]
+position = Vector2(102.00001, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile06" type="Sprite2D" parent="." unique_id=1989822857]
+position = Vector2(134, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile07" type="Sprite2D" parent="." unique_id=429158521]
+position = Vector2(166, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile08" type="Sprite2D" parent="." unique_id=2058157430]
+position = Vector2(198, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile09" type="Sprite2D" parent="." unique_id=980512164]
+position = Vector2(230, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile10" type="Sprite2D" parent="." unique_id=615411232]
+position = Vector2(262, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile11" type="Sprite2D" parent="." unique_id=61212545]
+position = Vector2(294, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile12" type="Sprite2D" parent="." unique_id=2041021793]
+position = Vector2(326, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile13" type="Sprite2D" parent="." unique_id=81767005]
+position = Vector2(358, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="Tile14" type="Sprite2D" parent="." unique_id=854499818]
+position = Vector2(390, 197.66666)
+texture = ExtResource("2_c7tj0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=144323273]
+position = Vector2(214, 200.16666)
+shape = SubResource("RectangleShape2D_tlndo")
