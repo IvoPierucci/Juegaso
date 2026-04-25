@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 125.0
-const JUMP_VELOCITY = -225.0
+const SPEED = 250.0
+const JUMP_VELOCITY = -500.0
 @onready var anim = $Sprite2D
 
 func _physics_process(delta: float) -> void:
@@ -25,9 +25,4 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	if not is_on_floor() && velocity.y<0:
-		anim.play("jump")
-	elif direction!=0:
-		anim.play("walk")
-	else:
-		anim.play()
+	
