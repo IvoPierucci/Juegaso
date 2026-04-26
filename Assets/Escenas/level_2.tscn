@@ -4,32 +4,21 @@
 [ext_resource type="PackedScene" uid="uid://c1ls2or1qbkkx" path="res://Assets/Escenas/map_2_plataform.tscn" id="2_374tu"]
 [ext_resource type="PackedScene" uid="uid://jl0quc84l6tu" path="res://Assets/Escenas/plataforma_cueva.tscn" id="3_374tu"]
 [ext_resource type="PackedScene" uid="uid://w6i40rb1qkbn" path="res://Assets/Escenas/fuera_limite.tscn" id="4_nehyj"]
+[ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="5_ra2t3"]
 
 [sub_resource type="Animation" id="Animation_gp45w"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath("../plataformaCueva5:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(865, 385)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../plataformaCueva3:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(3794, -683)]
+"values": [Vector2(3600, -820)]
 }
 
 [sub_resource type="Animation" id="Animation_nehyj"]
@@ -43,10 +32,44 @@ tracks/0/path = NodePath("../plataformaCueva3:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
+"times": PackedFloat32Array(0.014494556, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4268, -649), Vector2(3870, -649)]
+}
+
+[sub_resource type="Animation" id="Animation_ra2t3"]
+resource_name = "animacion4"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../plataformaCueva4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3794, -683), Vector2(3293.0002, -683)]
+"values": [Vector2(4200, -761), Vector2(3800, -761)]
+}
+
+[sub_resource type="Animation" id="Animation_x28e4"]
+resource_name = "animacion5"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../plataformaCueva5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3600, -820), Vector2(3600, -1000)]
 }
 
 [sub_resource type="Animation" id="Animation_q70eq"]
@@ -87,6 +110,8 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_gp45w"),
 &"animacion3": SubResource("Animation_nehyj"),
+&"animacion4": SubResource("Animation_ra2t3"),
+&"animacion5": SubResource("Animation_x28e4"),
 &"movimiento": SubResource("Animation_q70eq"),
 &"movimiento2": SubResource("Animation_374tu")
 }
@@ -94,6 +119,7 @@ _data = {
 [node name="level2" type="Node2D" unique_id=1442133726]
 
 [node name="map2plataform" parent="." unique_id=1067435632 instance=ExtResource("2_374tu")]
+position = Vector2(-3, 0)
 scale = Vector2(3, 3)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("1_f7g8p")]
@@ -121,11 +147,41 @@ autoplay = &"movimiento"
 position = Vector2(834, -188)
 scale = Vector2(1.1, 1.1)
 
+[node name="fueraLimite" parent="fueraLimite" unique_id=1040121814 instance=ExtResource("4_nehyj")]
+position = Vector2(1909.0912, 544.5455)
+scale = Vector2(0.2, 0.2)
+
 [node name="plataformaCueva3" parent="." unique_id=1707408667 instance=ExtResource("3_374tu")]
-position = Vector2(3794, -683)
+position = Vector2(4268, -649)
 scale = Vector2(3, 3)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva3" unique_id=425860728]
 root_node = NodePath("../../plataformaCueva2")
 libraries/ = SubResource("AnimationLibrary_x28e4")
 autoplay = &"animacion3"
+
+[node name="plataformaCueva4" parent="." unique_id=222909645 instance=ExtResource("3_374tu")]
+position = Vector2(4038.867, -761)
+scale = Vector2(3, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva4" unique_id=1168859866]
+root_node = NodePath("../../plataformaCueva2")
+libraries/ = SubResource("AnimationLibrary_x28e4")
+autoplay = &"animacion4"
+
+[node name="plataformaCueva5" parent="." unique_id=2147298872 instance=ExtResource("3_374tu")]
+position = Vector2(3600, -820)
+scale = Vector2(3, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva5" unique_id=118199445]
+root_node = NodePath("../../plataformaCueva2")
+libraries/ = SubResource("AnimationLibrary_x28e4")
+autoplay = &"animacion5"
+
+[node name="factura" parent="." unique_id=222449802 instance=ExtResource("5_ra2t3")]
+position = Vector2(3600, -609.00006)
+scale = Vector2(0.4, 0.4)
+
+[node name="fueraLimite2" parent="." unique_id=723013588 instance=ExtResource("4_nehyj")]
+position = Vector2(3421, 489)
+scale = Vector2(0.1, 0.1)
