@@ -149,11 +149,11 @@ position = Vector2(2934.0002, 411.00006)
 scale = Vector2(0.22000001, 0.22000001)
 
 [node name="fueraLimite4" parent="." unique_id=94960795 instance=ExtResource("4_nehyj")]
-position = Vector2(4916, -192)
+position = Vector2(4931.0005, 298)
 scale = Vector2(0.9, 0.9)
 
 [node name="fueraLimite" parent="." unique_id=458403100 instance=ExtResource("4_nehyj")]
-position = Vector2(834, -188)
+position = Vector2(833.99994, 515)
 scale = Vector2(1.1, 1.1)
 
 [node name="plataformaCueva3" parent="." unique_id=1707408667 instance=ExtResource("3_374tu")]

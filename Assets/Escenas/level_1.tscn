@@ -35,10 +35,10 @@ scale = Vector2(5, 5)
 position = Vector2(723, -1843)
 
 [node name="fueraLimite2" parent="." unique_id=1095434651 instance=ExtResource("8_8mj3f")]
-position = Vector2(1605, 140)
+position = Vector2(1620, 754)
 
 [node name="fueraLimite3" parent="." unique_id=1372838564 instance=ExtResource("8_8mj3f")]
-position = Vector2(4866, -816)
+position = Vector2(4860, -316)
 
 [node name="factura2" parent="." unique_id=222449802 instance=ExtResource("9_ovqf8")]
 position = Vector2(4203, -1175)
