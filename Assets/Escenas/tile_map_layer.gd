@@ -10,8 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
-func _return() -> void:
-	pass
+func _return() -> bool:
+	return false
 
 func _agarrar_medialuna() ->bool:
 	return false

@@ -35,7 +35,7 @@ scale = Vector2(3, 3)
 position = Vector2(20, -32.000015)
 
 [node name="CharacterBody2D" parent="." unique_id=1854975082 instance=ExtResource("4_t6wye")]
-position = Vector2(3799, -577)
+position = Vector2(1155, 532.99994)
 scale = Vector2(5, 5)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("7_brcwq")]

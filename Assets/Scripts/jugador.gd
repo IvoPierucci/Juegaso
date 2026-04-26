@@ -35,8 +35,9 @@ func _physics_process(delta: float) -> void:
 	elif velocity.x > 0:
 		sprite.flip_h = false # Mira a la derecha
 
-func _return() -> void:
+func _return() -> bool:
 	position = inicio
+	return true
 	
 func _agarrar_medialuna() -> bool:
 	medialunas +=1

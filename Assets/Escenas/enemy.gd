@@ -24,4 +24,6 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	body._return()
+	var aux = body._return()
+	if(!aux):
+		dire*=(-1)
