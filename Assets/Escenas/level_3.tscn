@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://bbpabj8x6jctt"]
+[gd_scene format=3 uid="uid://b67myixxcr0f4"]
 
-[ext_resource type="PackedScene" uid="uid://dkofxw7eqil23" path="res://Assets/Escenas/map_3_plataform.tscn" id="1_x3dr0"]
+[ext_resource type="PackedScene" path="res://Assets/Escenas/map_3_plataform.tscn" id="1_x3dr0"]
 [ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="2_nywx1"]
 [ext_resource type="PackedScene" uid="uid://cn5pasuchjxrw" path="res://Assets/Escenas/piedra_encantada.tscn" id="3_nywx1"]
 [ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="4_qfsdr"]
 [ext_resource type="PackedScene" uid="uid://dohkpfk487iw7" path="res://Assets/Escenas/enemy.tscn" id="5_5y1ki"]
-[ext_resource type="Script" uid="uid://b0t0tydsilmih" path="res://Assets/Escenas/area_2d.gd" id="6_5y1ki"]
+[ext_resource type="Script" path="res://Assets/Escenas/area_2d.gd" id="6_5y1ki"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c61xr"]
 size = Vector2(85, 439)

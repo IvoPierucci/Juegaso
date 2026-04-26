@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ocffrrond61r"]
 
+[ext_resource type="Texture2D" uid="uid://dmk5cypc8vly6" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Barda_Neuquen.png" id="1_jyvey"]
 [ext_resource type="PackedScene" uid="uid://dohkpfk487iw7" path="res://Assets/Escenas/enemy.tscn" id="4_t6wye"]
 [ext_resource type="PackedScene" uid="uid://bghrf41kq1ofy" path="res://Assets/Escenas/plataforma.tscn" id="5_jrkly"]
 [ext_resource type="PackedScene" uid="uid://bgxn41dbojsbl" path="res://Assets/Escenas/Suelo1.tscn" id="6_agirm"]
@@ -10,6 +11,11 @@
 
 [node name="Level1" type="Node2D" unique_id=1875453159]
 
+[node name="BardaNeuquen2" type="Sprite2D" parent="." unique_id=1955420302]
+position = Vector2(3621, -555)
+scale = Vector2(1.2, 1.037)
+texture = ExtResource("1_jyvey")
+
 [node name="Plataforma" parent="." unique_id=1508260971 instance=ExtResource("5_jrkly")]
 position = Vector2(1315, 542)
 scale = Vector2(3, 3)
@@ -17,20 +23,28 @@ scale = Vector2(3, 3)
 [node name="Suelo" parent="." unique_id=1996501728 instance=ExtResource("6_agirm")]
 position = Vector2(20, -32.000015)
 
+[node name="CharacterBody2D2" parent="." unique_id=956324945 instance=ExtResource("4_t6wye")]
+position = Vector2(3239, -1155.0001)
+scale = Vector2(5, 5)
+
 [node name="CharacterBody2D" parent="." unique_id=1854975082 instance=ExtResource("4_t6wye")]
 position = Vector2(3821.0002, -574.00006)
 scale = Vector2(5, 5)
 
 [node name="fueraLimite" parent="." unique_id=94960795 instance=ExtResource("8_8mj3f")]
-position = Vector2(-1153, 356)
+position = Vector2(723, -1843)
 
 [node name="fueraLimite2" parent="." unique_id=1095434651 instance=ExtResource("8_8mj3f")]
 position = Vector2(1605, 140)
 
 [node name="fueraLimite3" parent="." unique_id=1372838564 instance=ExtResource("8_8mj3f")]
-position = Vector2(4240, -796)
+position = Vector2(4866, -816)
 
-[node name="factura" parent="." unique_id=222449802 instance=ExtResource("9_ovqf8")]
+[node name="factura2" parent="." unique_id=222449802 instance=ExtResource("9_ovqf8")]
+position = Vector2(4203, -1175)
+scale = Vector2(0.4, 0.4)
+
+[node name="factura" parent="." unique_id=917721563 instance=ExtResource("9_ovqf8")]
 position = Vector2(2758, -50.000004)
 scale = Vector2(0.4, 0.4)
 
@@ -39,5 +53,9 @@ position = Vector2(144, 513)
 scale = Vector2(1.5, 1.5)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("7_brcwq")]
-position = Vector2(775, 494.00006)
+position = Vector2(2778, -78)
 scale = Vector2(0.3, 0.3)
+
+[node name="factura3" parent="." unique_id=2044819928 instance=ExtResource("9_ovqf8")]
+position = Vector2(3185, -1673)
+scale = Vector2(0.4, 0.4)

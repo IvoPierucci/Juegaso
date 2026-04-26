@@ -12,7 +12,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	position += SPEED * delta * dire
-	if(position <= posIni + Vector2(-400,0)):
+	if(position <= posIni + Vector2(-200,0)):
 		dire= Vector2(1,0)
 	if(position >= posIni + Vector2(400,0)):
 		dire= Vector2(-1,0)
