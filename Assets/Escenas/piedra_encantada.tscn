@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cn5pasuchjxrw"]
+
+[ext_resource type="Script" uid="uid://bodlqub1b84bo" path="res://piedra_encantada.gd" id="1_m1178"]
+[ext_resource type="Texture2D" uid="uid://dad2yqsgdpndp" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Piedra encantada.png" id="2_458ei"]
+[ext_resource type="Texture2D" uid="uid://cnftq0qyh83jm" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/medialuna ofrecida.png" id="3_458ei"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xu158"]
+size = Vector2(165, 126)
+
+[node name="PiedraOfrenda" type="Area2D" unique_id=1503776639]
+script = ExtResource("1_m1178")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=246170572]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_458ei")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1364393277]
+position = Vector2(5.5, -38)
+shape = SubResource("RectangleShape2D_xu158")
+
+[node name="Med1" type="Sprite2D" parent="." unique_id=1644874479]
+visible = false
+position = Vector2(-53, 43)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("3_458ei")
+
+[node name="Med2" type="Sprite2D" parent="." unique_id=903422904]
+visible = false
+position = Vector2(2, 43)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("3_458ei")
+
+[node name="Med3" type="Sprite2D" parent="." unique_id=1947648169]
+visible = false
+position = Vector2(59, 43)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("3_458ei")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

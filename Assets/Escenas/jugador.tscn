@@ -3,9 +3,8 @@
 [ext_resource type="Script" uid="uid://inigtdhpdhrj" path="res://Assets/Scripts/jugador.gd" id="1_tinhx"]
 [ext_resource type="Texture2D" uid="uid://cvedqtp54wvy" path="res://Assets/Player/Personaje normal.png" id="2_tinhx"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8y0cf"]
-radius = 164.0
-height = 766.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tinhx"]
+size = Vector2(232, 722)
 
 [node name="Jugador" type="CharacterBody2D" unique_id=756833830]
 script = ExtResource("1_tinhx")
@@ -19,5 +18,5 @@ scale = Vector2(2, 2)
 zoom = Vector2(0.5, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2123157115]
-position = Vector2(-22, -35)
-shape = SubResource("CapsuleShape2D_8y0cf")
+position = Vector2(-35, -37)
+shape = SubResource("RectangleShape2D_tinhx")
