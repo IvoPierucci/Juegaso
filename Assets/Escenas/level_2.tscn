@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://dcu3jxcm2yqda"]
+
+[ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="1_f7g8p"]
+[ext_resource type="PackedScene" uid="uid://c1ls2or1qbkkx" path="res://Assets/Escenas/map_2_plataform.tscn" id="2_374tu"]
+[ext_resource type="PackedScene" uid="uid://jl0quc84l6tu" path="res://Assets/Escenas/plataforma_cueva.tscn" id="3_374tu"]
+
+[sub_resource type="Animation" id="Animation_gp45w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(865, 385)]
+}
+
+[sub_resource type="Animation" id="Animation_q70eq"]
+resource_name = "movimiento"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(865, 385), Vector2(1428, 381.00003)]
+}
+
+[sub_resource type="Animation" id="Animation_374tu"]
+resource_name = "movimiento2"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2108, 381), Vector2(1603, 377)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x28e4"]
+_data = {
+&"RESET": SubResource("Animation_gp45w"),
+&"movimiento": SubResource("Animation_q70eq"),
+&"movimiento2": SubResource("Animation_374tu")
+}
+
+[node name="level2" type="Node2D" unique_id=1442133726]
+
+[node name="map2plataform" parent="." unique_id=1067435632 instance=ExtResource("2_374tu")]
+scale = Vector2(3, 3)
+
+[node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("1_f7g8p")]
+position = Vector2(-1068, -98.00001)
+scale = Vector2(0.3, 0.3)
+
+[node name="plataformaCueva2" parent="." unique_id=1707408667 instance=ExtResource("3_374tu")]
+position = Vector2(865, 385)
+scale = Vector2(3, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva2" unique_id=1926603602]
+root_node = NodePath("../../plataformaCueva2")
+libraries/ = SubResource("AnimationLibrary_x28e4")
+autoplay = &"movimiento2"
+
+[node name="plataformaCueva" parent="." unique_id=1012707181 instance=ExtResource("3_374tu")]
+position = Vector2(865, 385)
+scale = Vector2(3, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva" unique_id=54485993]
+libraries/ = SubResource("AnimationLibrary_x28e4")
+autoplay = &"movimiento"

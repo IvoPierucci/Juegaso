@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://jl0quc84l6tu"]
+
+[ext_resource type="Texture2D" uid="uid://be51ix53axy4c" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/1 Tiles/Tile_47.png" id="1_7wvbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4gd62"]
+size = Vector2(30, 31)
+
+[node name="plataformaCueva" type="AnimatableBody2D" unique_id=1707408667]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=657387256]
+texture = ExtResource("1_7wvbb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=55422961]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_4gd62")
