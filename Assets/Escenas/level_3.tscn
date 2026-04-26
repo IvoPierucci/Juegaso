@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bbpabj8x6jctt"]
+
+[ext_resource type="PackedScene" uid="uid://dkofxw7eqil23" path="res://Assets/Escenas/map_3_plataform.tscn" id="1_x3dr0"]
+[ext_resource type="PackedScene" uid="uid://ceabc8mmcxkrc" path="res://Assets/Escenas/jugador.tscn" id="2_nywx1"]
+[ext_resource type="PackedScene" uid="uid://cn5pasuchjxrw" path="res://Assets/Escenas/piedra_encantada.tscn" id="3_nywx1"]
+[ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="4_qfsdr"]
+[ext_resource type="PackedScene" uid="uid://dohkpfk487iw7" path="res://Assets/Escenas/enemy.tscn" id="5_5y1ki"]
+[ext_resource type="Script" uid="uid://b0t0tydsilmih" path="res://Assets/Escenas/area_2d.gd" id="6_5y1ki"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c61xr"]
+size = Vector2(85, 439)
+
+[node name="level_3" type="Node2D" unique_id=873578217]
+
+[node name="map_3_plataform" parent="." unique_id=497479979 instance=ExtResource("1_x3dr0")]
+position = Vector2(444, 603)
+scale = Vector2(3, 3)
+
+[node name="PiedraOfrenda" parent="." unique_id=1503776639 instance=ExtResource("3_nywx1")]
+position = Vector2(4311, -387)
+scale = Vector2(1.5, 1.5)
+
+[node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("2_nywx1")]
+position = Vector2(698, 477)
+scale = Vector2(0.3, 0.3)
+
+[node name="factura" parent="." unique_id=222449802 instance=ExtResource("4_qfsdr")]
+position = Vector2(572.00006, 35)
+scale = Vector2(0.4, 0.4)
+
+[node name="factura2" parent="." unique_id=2063176517 instance=ExtResource("4_qfsdr")]
+position = Vector2(1904, 1151)
+scale = Vector2(0.4, 0.4)
+
+[node name="Enemy2D" parent="." unique_id=956324945 instance=ExtResource("5_5y1ki")]
+position = Vector2(2526, 1315)
+scale = Vector2(5, 5)
+
+[node name="Enemy2D2" parent="." unique_id=1775150878 instance=ExtResource("5_5y1ki")]
+position = Vector2(3598, 1315)
+scale = Vector2(5, 5)
+
+[node name="Enemy2D3" parent="." unique_id=791106062 instance=ExtResource("5_5y1ki")]
+position = Vector2(3079.0002, 1315)
+scale = Vector2(5, 5)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2126308078]
+script = ExtResource("6_5y1ki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=484704633]
+position = Vector2(4465, 1156)
+shape = SubResource("RectangleShape2D_c61xr")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

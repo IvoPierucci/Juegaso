@@ -22,7 +22,6 @@ func _physics_process(delta: float) -> void:
 			sprite.rotation=0
 		else:
 			sprite.rotation+=rot
-			print(sprite.rotation)
 			if(abs(sprite.rotation)>0.2):
 				rot*=-1
 		
@@ -60,3 +59,6 @@ func _dejar_medialuna() -> int:
 	
 func _set_checkpoint(a : Vector2) -> void:
 	inicio=a
+
+func _forced_teleport(a: Vector2) -> void:
+	position=a
