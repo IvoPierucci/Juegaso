@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://c4ktdm8s3fw3m" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Piedra encantada gaucha.png" id="9_muxxs"]
 [ext_resource type="Texture2D" uid="uid://cnftq0qyh83jm" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/medialuna ofrecida.png" id="10_g0uc7"]
 [ext_resource type="Texture2D" uid="uid://bceu1yuwnbrob" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/mate.png" id="11_n1m87"]
+[ext_resource type="PackedScene" uid="uid://w6i40rb1qkbn" path="res://Assets/Escenas/fuera_limite.tscn" id="12_g0uc7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c61xr"]
 size = Vector2(85, 439)
@@ -134,5 +135,12 @@ position = Vector2(7366, -370)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("11_n1m87")
 flip_h = true
+
+[node name="fueraLimite" parent="." unique_id=94960795 instance=ExtResource("12_g0uc7")]
+position = Vector2(2726, 470)
+
+[node name="fueraLimite2" parent="." unique_id=233170176 instance=ExtResource("12_g0uc7")]
+position = Vector2(4526, -6)
+scale = Vector2(2, 2)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
