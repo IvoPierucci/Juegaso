@@ -1,8 +1,5 @@
 [gd_scene format=3 uid="uid://ocffrrond61r"]
 
-[ext_resource type="Texture2D" uid="uid://b766nrm3m1o" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Day/1.png" id="1_ovqf8"]
-[ext_resource type="Texture2D" uid="uid://k4lonudhl2qv" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Day/3.png" id="2_jttx7"]
-[ext_resource type="Texture2D" uid="uid://dhywixjsp2crd" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/2 Background/Day/5.png" id="3_7k1e5"]
 [ext_resource type="PackedScene" uid="uid://dohkpfk487iw7" path="res://Assets/Escenas/enemy.tscn" id="4_t6wye"]
 [ext_resource type="PackedScene" uid="uid://bghrf41kq1ofy" path="res://Assets/Escenas/plataforma.tscn" id="5_jrkly"]
 [ext_resource type="PackedScene" uid="uid://bgxn41dbojsbl" path="res://Assets/Escenas/Suelo1.tscn" id="6_agirm"]
@@ -12,21 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://cn5pasuchjxrw" path="res://Assets/Escenas/piedra_encantada.tscn" id="10_jttx7"]
 
 [node name="Level1" type="Node2D" unique_id=1875453159]
-
-[node name="1" type="Sprite2D" parent="." unique_id=1478182485]
-position = Vector2(3467.0002, -720.00006)
-scale = Vector2(12.042535, 9.118827)
-texture = ExtResource("1_ovqf8")
-
-[node name="3" type="Sprite2D" parent="." unique_id=1570059624]
-position = Vector2(983.9995, -27)
-scale = Vector2(3.3159711, 5.2654324)
-texture = ExtResource("2_jttx7")
-
-[node name="5" type="Sprite2D" parent="." unique_id=619929459]
-position = Vector2(698.00006, 398.00003)
-scale = Vector2(2.3038197, 1.212963)
-texture = ExtResource("3_7k1e5")
 
 [node name="Plataforma" parent="." unique_id=1508260971 instance=ExtResource("5_jrkly")]
 position = Vector2(1315, 542)
