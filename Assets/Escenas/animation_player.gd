@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends AnimationPlayer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,10 +8,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-	
-func _return() -> void:
-	pass
-
-func _forced_teleport(a:Vector2) -> void:
 	pass
