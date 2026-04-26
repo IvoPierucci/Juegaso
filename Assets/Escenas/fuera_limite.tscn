@@ -9,7 +9,7 @@ size = Vector2(1177, 383)
 script = ExtResource("1_xuhod")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=187647632]
-position = Vector2(589, 807)
+position = Vector2(589, 195)
 shape = SubResource("RectangleShape2D_upi3k")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
