@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://jl0quc84l6tu" path="res://Assets/Escenas/plataforma_cueva.tscn" id="3_374tu"]
 [ext_resource type="PackedScene" uid="uid://w6i40rb1qkbn" path="res://Assets/Escenas/fuera_limite.tscn" id="4_nehyj"]
 [ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="5_ra2t3"]
+[ext_resource type="PackedScene" uid="uid://cn5pasuchjxrw" path="res://Assets/Escenas/piedra_encantada.tscn" id="6_gp45w"]
 
 [sub_resource type="Animation" id="Animation_gp45w"]
 length = 0.001
@@ -52,7 +53,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4200, -761), Vector2(3800, -761)]
+"values": [Vector2(3800, -761), Vector2(4200, -761)]
 }
 
 [sub_resource type="Animation" id="Animation_x28e4"]
@@ -123,7 +124,7 @@ position = Vector2(-3, 0)
 scale = Vector2(3, 3)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("1_f7g8p")]
-position = Vector2(-1068, -98.00001)
+position = Vector2(-811, -98.00001)
 scale = Vector2(0.3, 0.3)
 
 [node name="plataformaCueva2" parent="." unique_id=1810320908 instance=ExtResource("3_374tu")]
@@ -143,13 +144,17 @@ scale = Vector2(3, 3)
 libraries/ = SubResource("AnimationLibrary_x28e4")
 autoplay = &"movimiento"
 
-[node name="fueraLimite" parent="." unique_id=94960795 instance=ExtResource("4_nehyj")]
+[node name="fueraLimite3" parent="." unique_id=1040121814 instance=ExtResource("4_nehyj")]
+position = Vector2(2934.0002, 411.00006)
+scale = Vector2(0.22000001, 0.22000001)
+
+[node name="fueraLimite4" parent="." unique_id=94960795 instance=ExtResource("4_nehyj")]
+position = Vector2(4916, -192)
+scale = Vector2(0.9, 0.9)
+
+[node name="fueraLimite" parent="." unique_id=458403100 instance=ExtResource("4_nehyj")]
 position = Vector2(834, -188)
 scale = Vector2(1.1, 1.1)
-
-[node name="fueraLimite" parent="fueraLimite" unique_id=1040121814 instance=ExtResource("4_nehyj")]
-position = Vector2(1909.0912, 544.5455)
-scale = Vector2(0.2, 0.2)
 
 [node name="plataformaCueva3" parent="." unique_id=1707408667 instance=ExtResource("3_374tu")]
 position = Vector2(4268, -649)
@@ -161,7 +166,7 @@ libraries/ = SubResource("AnimationLibrary_x28e4")
 autoplay = &"animacion3"
 
 [node name="plataformaCueva4" parent="." unique_id=222909645 instance=ExtResource("3_374tu")]
-position = Vector2(4038.867, -761)
+position = Vector2(3834.5542, -761)
 scale = Vector2(3, 3)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva4" unique_id=1168859866]
@@ -179,9 +184,21 @@ libraries/ = SubResource("AnimationLibrary_x28e4")
 autoplay = &"animacion5"
 
 [node name="factura" parent="." unique_id=222449802 instance=ExtResource("5_ra2t3")]
-position = Vector2(3600, -609.00006)
+position = Vector2(3607, -616)
+scale = Vector2(0.4, 0.4)
+
+[node name="factura3" parent="." unique_id=2049219315 instance=ExtResource("5_ra2t3")]
+position = Vector2(4903, -38.000004)
+scale = Vector2(0.4, 0.4)
+
+[node name="factura2" parent="." unique_id=509225813 instance=ExtResource("5_ra2t3")]
+position = Vector2(5940, 208.00002)
 scale = Vector2(0.4, 0.4)
 
 [node name="fueraLimite2" parent="." unique_id=723013588 instance=ExtResource("4_nehyj")]
 position = Vector2(3421, 489)
 scale = Vector2(0.1, 0.1)
+
+[node name="PiedraOfrenda" parent="." unique_id=1503776639 instance=ExtResource("6_gp45w")]
+position = Vector2(-1026, -80)
+scale = Vector2(1.5, 1.5)
