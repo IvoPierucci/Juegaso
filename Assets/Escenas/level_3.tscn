@@ -147,7 +147,7 @@ texture = ExtResource("11_n1m87")
 flip_h = true
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("2_nywx1")]
-position = Vector2(784, 489)
+position = Vector2(666, 507.00003)
 scale = Vector2(0.3, 0.3)
 
 [connection signal="animation_changed" from="PiedraOfrenda/plataformaCueva/AnimationPlayer" to="PiedraOfrenda/plataformaCueva/AnimationPlayer" method="_on_animation_changed"]

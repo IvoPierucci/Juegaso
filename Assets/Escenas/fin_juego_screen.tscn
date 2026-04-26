@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cnrfxjmgykpmu"]
+
+[ext_resource type="Texture2D" uid="uid://cwqwiq7eu6yal" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/b72b87c4f9309e8cbf63be3b1e82ab71_XXL.jpg" id="1_27swf"]
+
+[node name="finJuegoScreen" type="Sprite2D" unique_id=1486178809]
+position = Vector2(584.5, 353.99997)
+scale = Vector2(0.83214283, 0.5)
+texture = ExtResource("1_27swf")

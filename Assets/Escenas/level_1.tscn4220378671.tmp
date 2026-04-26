@@ -41,11 +41,11 @@ position = Vector2(1620, 754)
 position = Vector2(4860, -316)
 
 [node name="factura2" parent="." unique_id=222449802 instance=ExtResource("9_ovqf8")]
-position = Vector2(4203, -1175)
+position = Vector2(968.00024, 524.9999)
 scale = Vector2(0.4, 0.4)
 
 [node name="factura" parent="." unique_id=917721563 instance=ExtResource("9_ovqf8")]
-position = Vector2(2758, -50.000004)
+position = Vector2(851.0001, 510.99994)
 scale = Vector2(0.4, 0.4)
 
 [node name="PiedraOfrenda" parent="." unique_id=1503776639 instance=ExtResource("10_jttx7")]
@@ -57,5 +57,5 @@ position = Vector2(380, 490)
 scale = Vector2(0.3, 0.3)
 
 [node name="factura3" parent="." unique_id=2044819928 instance=ExtResource("9_ovqf8")]
-position = Vector2(3185, -1673)
+position = Vector2(750.00024, 490.99976)
 scale = Vector2(0.4, 0.4)
