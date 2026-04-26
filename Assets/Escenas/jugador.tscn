@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cvedqtp54wvy" path="res://Assets/Player/Personaje normal.png" id="2_tinhx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tinhx"]
-size = Vector2(232, 722)
+size = Vector2(232, 651)
 
 [node name="Jugador" type="CharacterBody2D" unique_id=756833830]
 script = ExtResource("1_tinhx")
@@ -18,5 +18,5 @@ scale = Vector2(2, 2)
 zoom = Vector2(0.5, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2123157115]
-position = Vector2(-35, -37)
+position = Vector2(-35, -1.5)
 shape = SubResource("RectangleShape2D_tinhx")
