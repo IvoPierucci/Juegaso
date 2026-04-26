@@ -18,10 +18,10 @@ func _on_body_entered(body: Node2D) -> void:
 	medialunas += body._dejar_medialuna()
 	if(medialunas > aux):
 		body._set_checkpoint(position)
-	if(medialunas==1):
+	if(medialunas>=1):
 		m1.visible=true
-	if(medialunas==2):
+	if(medialunas>=2):
 		m2.visible=true
-	if(medialunas==3):
+	if(medialunas>=3):
 		m3.visible=true
 		
