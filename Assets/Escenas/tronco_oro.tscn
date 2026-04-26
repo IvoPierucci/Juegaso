@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b6ec3cbnovcxr"]
+
+[ext_resource type="Texture2D" uid="uid://cam34ml6mt76s" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Tronco de oro gaucho.png" id="1_0br40"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mqneq"]
+size = Vector2(555, 135)
+
+[node name="TroncoOro" type="Area2D" unique_id=1753758516]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1006888338]
+texture = ExtResource("1_0br40")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1659400275]
+position = Vector2(-20.5, 32.5)
+shape = SubResource("RectangleShape2D_mqneq")

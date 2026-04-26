@@ -6,9 +6,51 @@
 [ext_resource type="PackedScene" uid="uid://cmxyixc80y4oc" path="res://Assets/Escenas/factura.tscn" id="4_qfsdr"]
 [ext_resource type="PackedScene" uid="uid://dohkpfk487iw7" path="res://Assets/Escenas/enemy.tscn" id="5_5y1ki"]
 [ext_resource type="Script" uid="uid://b0t0tydsilmih" path="res://Assets/Escenas/area_2d.gd" id="6_5y1ki"]
+[ext_resource type="PackedScene" uid="uid://jl0quc84l6tu" path="res://Assets/Escenas/plataforma_cueva.tscn" id="7_c61xr"]
+[ext_resource type="PackedScene" uid="uid://b6ec3cbnovcxr" path="res://Assets/Escenas/tronco_oro.tscn" id="8_cp0ry"]
+[ext_resource type="Texture2D" uid="uid://c4ktdm8s3fw3m" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/Piedra encantada gaucha.png" id="9_muxxs"]
+[ext_resource type="Texture2D" uid="uid://cnftq0qyh83jm" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/medialuna ofrecida.png" id="10_g0uc7"]
+[ext_resource type="Texture2D" uid="uid://bceu1yuwnbrob" path="res://Assets/craftpix-net-846754-free-green-zone-tileset-pixel-art/mate.png" id="11_n1m87"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c61xr"]
 size = Vector2(85, 439)
+
+[sub_resource type="Animation" id="Animation_c61xr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4669, -261)]
+}
+
+[sub_resource type="Animation" id="Animation_cp0ry"]
+resource_name = "movfin"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4669, -261), Vector2(6669, -261)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lp044"]
+_data = {
+&"RESET": SubResource("Animation_c61xr"),
+&"movfin": SubResource("Animation_cp0ry")
+}
 
 [node name="level_3" type="Node2D" unique_id=873578217]
 
@@ -50,5 +92,47 @@ script = ExtResource("6_5y1ki")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=484704633]
 position = Vector2(4465, 1156)
 shape = SubResource("RectangleShape2D_c61xr")
+
+[node name="plataformaCueva" parent="." unique_id=1707408667 instance=ExtResource("7_c61xr")]
+position = Vector2(4669, -261)
+scale = Vector2(3, 3)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="plataformaCueva" unique_id=568359063]
+libraries/ = SubResource("AnimationLibrary_lp044")
+
+[node name="merienda" type="Node" parent="." unique_id=1887659725]
+
+[node name="TroncoOro" parent="merienda" unique_id=1753758516 instance=ExtResource("8_cp0ry")]
+position = Vector2(7286, -405)
+scale = Vector2(0.4, 0.4)
+
+[node name="PiedraEncantadaGaucha" type="Sprite2D" parent="merienda" unique_id=2135445425]
+position = Vector2(7529, -394)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_muxxs")
+
+[node name="Sprite2D5" type="Sprite2D" parent="merienda" unique_id=620869487]
+position = Vector2(7425.0005, -341)
+rotation = 1.0471976
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_g0uc7")
+
+[node name="Sprite2D" type="Sprite2D" parent="merienda" unique_id=1035938542]
+
+[node name="Sprite2D4" type="Sprite2D" parent="merienda" unique_id=754898581]
+position = Vector2(7314, -371)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_g0uc7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="merienda" unique_id=1606369634]
+position = Vector2(7499, -320)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("10_g0uc7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="merienda" unique_id=155490274]
+position = Vector2(7366, -370)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("11_n1m87")
+flip_h = true
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
