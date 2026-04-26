@@ -53,7 +53,7 @@ position = Vector2(144, 513)
 scale = Vector2(1.5, 1.5)
 
 [node name="Jugador" parent="." unique_id=756833830 instance=ExtResource("7_brcwq")]
-position = Vector2(2778, -78)
+position = Vector2(380, 490)
 scale = Vector2(0.3, 0.3)
 
 [node name="factura3" parent="." unique_id=2044819928 instance=ExtResource("9_ovqf8")]
